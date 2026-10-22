@@ -186,11 +186,11 @@ h1 em { margin-top: .16em; color: var(--lime); font-weight: 500; }
 .details-intro h2 { display: flex; flex-direction: column; gap: .02em; text-align: right; font-size: clamp(52px, 6.6vw, 98px); line-height: 1.01; }
 .details-intro h2 span, .details-intro h2 em { display: block; }
 .details-intro h2 em { color: var(--coral); font-weight: 500; }
-.date-display { max-width: 960px; margin: 0 auto; padding: 58px 0 64px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; color: inherit; text-decoration: none; }
-.date-unit { min-height: 158px; padding: 24px 14px 20px; border: 1px solid var(--line); background: rgba(251,253,255,.56); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 13px; position: relative; overflow: hidden; }
-.date-unit::before { content: ""; position: absolute; left: 25%; right: 25%; top: 0; height: 3px; background: var(--coral); border-radius: 0 0 4px 4px; }
-.date-unit small { font-size: 9px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; opacity: .58; }
-.date-unit strong { font-family: "Cormorant Garamond", serif; color: var(--coral); font-size: clamp(46px, 5.2vw, 74px); font-weight: 600; line-height: .8; }
+.date-display { max-width: 900px; margin: 0 auto; padding: 58px 0 64px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); color: inherit; text-decoration: none; }
+.date-unit { min-height: 132px; padding: 22px 12px 18px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+.date-unit + .date-unit { border-left: 1px solid var(--line); }
+.date-unit small { color: var(--coral); font-size: 9px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; }
+.date-unit strong { font-family: "Cormorant Garamond", serif; color: var(--forest); font-size: clamp(38px, 4.2vw, 58px); font-weight: 500; letter-spacing: -.025em; line-height: .9; }
 .detail-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .detail-card { min-height: 390px; padding: 32px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; display: flex; flex-direction: column; }
 .detail-card.featured { background: var(--forest); color: var(--paper); transform: translateY(18px); border-color: var(--forest); }
@@ -328,9 +328,10 @@ footer > div { display: flex; justify-content: space-between; padding-top: 24px;
   .details-section { padding: 100px 6vw; }
   .details-intro { display: block; }
   .details-intro h2 { margin-top: 18px; align-items: flex-start; text-align: left; font-size: clamp(48px, 14vw, 72px); }
-  .date-display { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 48px 0 52px; gap: 10px; }
-  .date-unit { min-height: 132px; padding: 20px 10px 17px; }
-  .date-unit strong { font-size: clamp(45px, 15vw, 62px); }
+  .date-display { padding: 46px 0 50px; }
+  .date-unit { min-height: 98px; padding: 17px 5px 14px; gap: 9px; }
+  .date-unit small { font-size: 8px; letter-spacing: .15em; }
+  .date-unit strong { font-size: clamp(29px, 7.5vw, 42px); }
   .detail-card { min-height: 280px; }
   .map-copy { padding: 54px 32px; }
   .map-copy::after { right: 28px; top: 24px; }

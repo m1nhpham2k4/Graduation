@@ -307,24 +307,43 @@ footer > div { display: flex; justify-content: space-between; padding-top: 24px;
   .water-particle:nth-child(even) { display: none; }
   .site-header { padding: 20px 6vw; }
   .monogram { width: 42px; height: 42px; }
-  h1 { font-size: clamp(58px, 15.5vw, 84px); line-height: .92; }
+  .sound-toggle { width: 42px; height: 42px; }
+  .hero { gap: 52px; padding: 112px 6vw 72px; }
+  .hero-copy { padding-top: 0; }
+  .hero-kicker { max-width: 290px; font-size: 13px; line-height: 1.65; }
+  h1 { font-size: clamp(48px, 14vw, 64px); line-height: .94; }
+  h1 .hero-title-main { white-space: normal; }
   h1 em { margin-top: .18em; }
-  .hero { padding-left: 6vw; padding-right: 6vw; }
-  .hero-note { padding-left: 55px; }
+  .hero-note { margin-top: 32px; padding-left: 48px; font-size: 13px; }
   .hero-note::before { width: 38px; }
-  .circle-link { width: 90px; height: 90px; margin-left: 55%; }
-  .invitation-card { width: 88vw; min-height: 0; padding: 24px; grid-template-columns: 1fr; }
-  .card-photo-panel { min-height: 310px; margin: 10px 10px 0; padding: 30px 20px; border-radius: 140px 140px 16px 16px; }
-  .card-info-panel { padding: 42px 18px 34px; }
-  .graduate-avatar { width: 180px; height: 180px; margin-bottom: 24px; }
+  .circle-link { display: flex; width: 84px; height: 84px; margin: 30px 8% 0 auto; font-size: 10px; }
+  .invitation-card-wrap { width: 100%; }
+  .invitation-card { width: 100%; min-height: 0; padding: 18px; grid-template-columns: 1fr; }
+  .invitation-card::after { inset: 10px; }
+  .card-corner { width: 44px; height: 44px; }
+  .card-corner.top-left { top: 15px; left: 15px; }
+  .card-corner.bottom-right { right: 15px; bottom: 15px; }
+  .card-photo-panel { min-height: 270px; margin: 8px 8px 0; padding: 26px 16px; border-radius: 130px 130px 14px 14px; }
+  .card-info-panel { padding: 36px 12px 28px; }
+  .graduate-avatar { width: clamp(150px, 46vw, 180px); height: clamp(150px, 46vw, 180px); margin-bottom: 22px; }
   .graduate-avatar span { font-size: 39px; }
   .card-program { font-size: 8px; }
-  .card-name { font-size: 52px; }
-  .float-label { font-size: 15px; }
-  .label-one { right: -18px; }
-  .label-two { left: -14px; }
-  .letter-heading h2 br, .details-intro h2 br { display: none; }
-  .letter-section { min-height: auto; gap: 45px; }
+  .card-small { margin-bottom: 22px; }
+  .card-name { font-size: clamp(43px, 14vw, 52px); line-height: .84; }
+  .card-divider { margin: 21px 0 16px; }
+  .card-time { padding: 16px 6px; }
+  .card-time strong { font-size: 27px; }
+  .card-place { margin-top: 20px; }
+  .float-label { padding: 6px 10px; font-size: 14px; }
+  .label-one { right: 2px; }
+  .label-two { left: 2px; }
+  .letter-section { min-height: auto; gap: 36px; padding: 84px 6vw; }
+  .letter-heading .eyebrow { max-width: 290px; line-height: 1.7; }
+  .letter-heading h2 { font-size: clamp(42px, 12vw, 54px); line-height: 1; }
+  .letter-heading h2 br { display: block; }
+  .letter-body { max-width: none; font-size: 13px; line-height: 1.85; }
+  .letter-body p { margin-bottom: 20px; }
+  .signature { margin-top: 28px; font-size: 34px; }
   .details-section { padding: 84px 6vw 100px; }
   .details-intro { display: block; }
   .details-intro { padding-bottom: 28px; }
@@ -336,18 +355,40 @@ footer > div { display: flex; justify-content: space-between; padding-top: 24px;
   .date-unit:nth-child(n + 3) { border-top: 0; }
   .date-unit small { font-size: 8px; letter-spacing: .18em; }
   .date-unit strong { font-size: clamp(42px, 13vw, 56px); }
-  .detail-card { min-height: 280px; }
-  .map-copy { padding: 54px 32px; }
+  .detail-card { min-height: 260px; padding: 25px; }
+  .detail-card h3 { font-size: 33px; }
+  .detail-icon { width: 42px; }
+  .detail-card.featured { min-height: 360px; }
+  .photo-window { grid-template-columns: 1fr; gap: 7px; }
+  .photo-window strong, .photo-window small { justify-self: start; text-align: left; }
+  .map-block { margin-top: 54px; }
+  .map-copy { padding: 46px 25px; }
   .map-copy::after { right: 28px; top: 24px; }
-  .map-frame, .map-frame iframe { min-height: 340px; }
-  .schedule-section { padding: 100px 8vw; }
-  .timeline li { grid-template-columns: 58px 18px 1fr; gap: 12px; }
-  .countdown-section { padding: 110px 4vw; }
-  .countdown { gap: 8px; margin-top: 55px; }
-  .countdown div { min-width: 62px; }
-  .countdown strong { font-size: 15vw; }
-  .countdown i { font-size: 24px; }
-  .cta-group { flex-direction: column; padding: 0 8vw; }
-  .contact-section { padding: 72px 6vw 80px; }
-  footer > div { gap: 20px; }
+  .map-copy h3 { font-size: clamp(38px, 11vw, 48px); }
+  .map-direction { display: inline-flex; align-items: center; min-height: 44px; }
+  .map-frame, .map-frame iframe { min-height: 300px; }
+  .schedule-section { gap: 48px; padding: 84px 6vw; }
+  .schedule-heading h2 { font-size: clamp(48px, 13vw, 60px); }
+  .timeline li { grid-template-columns: 50px 16px 1fr; gap: 10px; min-height: 136px; }
+  .timeline time { font-size: 22px; }
+  .timeline strong { font-size: 29px; }
+  .timeline p { margin-top: 10px; font-size: 11px; }
+  .countdown-section { padding: 84px 5vw; }
+  .countdown-section h2 { font-size: clamp(42px, 12vw, 54px); line-height: 1; }
+  .countdown { width: 100%; margin: 44px auto 38px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+  .countdown div { min-width: 0; padding: 0 4px; }
+  .countdown div + i + div { border-left: 1px solid var(--line); }
+  .countdown strong { font-size: clamp(40px, 13vw, 56px); }
+  .countdown span { margin-top: 12px; font-size: 8px; letter-spacing: .13em; }
+  .countdown i { display: none; }
+  .cta-group { flex-direction: column; align-items: center; padding: 0 6vw; }
+  .button { width: min(100%, 320px); min-height: 50px; padding: 15px 22px; }
+  .contact-section { padding: 64px 6vw 70px; }
+  .contact-heading h2 { font-size: 40px; }
+  .contact-links { gap: 10px; }
+  .contact-card { width: 54px; height: 54px; }
+  .contact-icon { width: 42px; height: 42px; }
+  footer { padding: 60px 6vw 28px; }
+  footer p { margin: 26px auto 44px; font-size: 29px; }
+  footer > div { flex-direction: column; align-items: center; gap: 10px; }
 }

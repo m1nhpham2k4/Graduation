@@ -13,6 +13,7 @@
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
+    <div class="water-particles" id="waterParticles" aria-hidden="true"></div>
     <header class="site-header">
       <a class="monogram" href="#top" aria-label="Về đầu trang">DM</a>
       <nav aria-label="Điều hướng chính">
@@ -91,16 +92,15 @@
       <section class="details-section" id="thong-tin" aria-labelledby="details-title">
         <div class="details-intro reveal">
           <p class="eyebrow">The big day</p>
-          <h2 id="details-title">Hẹn gặp bạn<br />vào ngày</h2>
+          <h2 id="details-title"><span>Hẹn gặp bạn</span><em>vào ngày</em></h2>
         </div>
 
-        <div class="date-display reveal">
-          <span class="date-day">25</span>
-          <div>
-            <span>Thứ Tư</span>
-            <strong>Tháng 11 · 2026</strong>
-          </div>
-        </div>
+        <time class="date-display reveal" datetime="2026-11-25" aria-label="Thứ Tư, ngày 25 tháng 11 năm 2026">
+          <span class="date-unit"><small>Thứ</small><strong>Tư</strong></span>
+          <span class="date-unit"><small>Ngày</small><strong>25</strong></span>
+          <span class="date-unit"><small>Tháng</small><strong>11</strong></span>
+          <span class="date-unit"><small>Năm</small><strong>2026</strong></span>
+        </time>
 
         <div class="detail-grid">
           <article class="detail-card reveal">
@@ -112,11 +112,15 @@
           </article>
           <article class="detail-card featured reveal">
             <span class="detail-number">02</span>
-            <svg class="detail-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 43s14-13 14-25a14 14 0 1 0-28 0c0 12 14 25 14 25Z"/><circle cx="24" cy="18" r="4"/></svg>
-            <p class="detail-label">Địa điểm</p>
-            <h3>Đại học Công nghiệp TP.HCM</h3>
-            <p>12 Nguyễn Văn Bảo, P. Hạnh Thông<br />TP. Hồ Chí Minh</p>
-            <a class="direction-button" href="https://www.google.com/maps/dir/?api=1&amp;destination=Trường+Đại+học+Công+nghiệp+TP.HCM,+12+Nguyễn+Văn+Bảo,+Phường+Hạnh+Thông,+TP.HCM" target="_blank" rel="noreferrer">Chỉ đường <span>↗</span></a>
+            <svg class="detail-icon photo-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 16h8l3-5h12l3 5h8v23H7Z"/><circle cx="24" cy="27" r="8"/><path d="M37 21h.01"/></svg>
+            <p class="detail-label">Hẹn nhau trong khung hình</p>
+            <h3>Đến chụp cùng Minh nhé!</h3>
+            <p class="photo-invite-copy">Ngày vui sẽ trọn vẹn hơn khi có bạn ở đó. Sau lễ trao bằng, hãy ở lại cùng Minh lưu vài tấm ảnh và thật nhiều kỷ niệm thanh xuân.</p>
+            <div class="photo-window" aria-label="Thời gian chụp hình từ 9 giờ 30 đến 11 giờ 30">
+              <span>Photo time</span>
+              <strong>09:30 → 11:30</strong>
+              <small>Gặp nhau sau lễ trao bằng</small>
+            </div>
           </article>
         </div>
 

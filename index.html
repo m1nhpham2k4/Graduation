@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#082c47" />
+    <meta name="description" content="Thiệp mời lễ tốt nghiệp của Phạm Viết Dũng Minh — một cột mốc đáng nhớ, trọn vẹn hơn khi có bạn ở bên." />
+    <title>Thiệp mời tốt nghiệp · Dũng Minh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="water-particles" id="waterParticles" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="monogram" href="#top" aria-label="Về đầu trang">DM</a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#loi-moi">Lời mời</a>
+        <a href="#thong-tin">Thông tin</a>
+        <a href="#lich-trinh">Lịch trình</a>
+        <a href="#lien-he">Liên hệ</a>
+        <a class="nav-location" href="#ban-do">Địa điểm <span>↘</span></a>
+      </nav>
+      <button class="sound-toggle" type="button" aria-label="Tạm dừng hiệu ứng" aria-pressed="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Graduation Ceremony · 2026</p>
+          <p class="hero-kicker">Trân trọng kính mời bạn đến dự</p>
+          <h1 id="hero-title"><span class="hero-title-main">Lễ tốt nghiệp</span><em>Dũng Minh</em></h1>
+          <p class="hero-note">Một chặng đường khép lại.<br />Một hành trình mới bắt đầu.</p>
+          <a class="circle-link" href="#loi-moi" aria-label="Mở thiệp mời">
+            <span>Mở thiệp</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" /></svg>
+          </a>
+        </div>
+
+        <div class="invitation-card-wrap reveal">
+          <div class="invitation-card">
+            <div class="card-corner top-left"></div>
+            <div class="card-corner bottom-right"></div>
+            <div class="card-photo-panel">
+              <!-- Ảnh chân dung tốt nghiệp của Dũng Minh. -->
+              <div class="graduate-avatar">
+                <span aria-hidden="true">DM</span>
+                <img id="graduateAvatar" src="./graduation.png" alt="Ảnh chân dung tốt nghiệp của Phạm Viết Dũng Minh" />
+              </div>
+              <p class="card-program">Computer Science - IUH</p>
+            </div>
+            <div class="card-info-panel">
+              <p class="card-small">Graduation portrait · 2026</p>
+              <p class="card-name">Phạm Viết<br />Dũng Minh</p>
+              <div class="card-divider"><span></span><i>✦</i><span></span></div>
+              <p class="card-occasion">Lễ chụp ảnh tốt nghiệp</p>
+              <div class="card-time">
+                <span>Thứ Tư · 25.11.2026</span>
+                <strong>09:30 — 11:30</strong>
+              </div>
+              <p class="card-place">IUH · 12 Nguyễn Văn Bảo</p>
+            </div>
+          </div>
+          <span class="float-label label-one">finally!</span>
+          <span class="float-label label-two">class of '26</span>
+        </div>
+
+        <div class="hero-index" aria-hidden="true">01</div>
+      </section>
+
+      <section class="letter-section" id="loi-moi" aria-labelledby="letter-title">
+        <div class="section-index">02</div>
+        <div class="letter-heading reveal">
+          <p class="eyebrow light">Dear my favorite people</p>
+          <h2 id="letter-title">Ngày vui sẽ trọn vẹn hơn<br />khi có <em>bạn</em> ở bên.</h2>
+        </div>
+        <div class="letter-body reveal">
+          <p>Sau những ngày chạy deadline, những đêm thức muộn và cả những lần muốn bỏ cuộc, mình đã đi đến cột mốc này.</p>
+          <p>Mình rất mong được gặp bạn trong ngày đặc biệt ấy — để cùng lưu lại một tấm hình, một cái ôm và một kỷ niệm thật đẹp trước khi hành trình mới bắt đầu.</p>
+          <div class="signature">Dũng Minh <span>♡</span></div>
+        </div>
+        <div class="doodle-star star-one" aria-hidden="true">✦</div>
+        <div class="doodle-star star-two" aria-hidden="true">✧</div>
+      </section>
+
+      <section class="details-section" id="thong-tin" aria-labelledby="details-title">
+        <div class="details-intro reveal">
+          <p class="eyebrow">The big day</p>
+          <h2 id="details-title"><span>Hẹn gặp bạn</span><em>vào ngày</em></h2>
+        </div>
+
+        <time class="date-display reveal" datetime="2026-11-25" aria-label="Thứ Tư, ngày 25 tháng 11 năm 2026">
+          <span class="date-unit"><small>Thứ</small><strong>Tư</strong></span>
+          <span class="date-unit"><small>Ngày</small><strong>25</strong></span>
+          <span class="date-unit"><small>Tháng</small><strong>11</strong></span>
+          <span class="date-unit"><small>Năm</small><strong>2026</strong></span>
+        </time>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <span class="detail-number">01</span>
+            <svg class="detail-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M24 13v12l8 5"/></svg>
+            <p class="detail-label">Thời gian</p>
+            <h3>07:00–11:30</h3>
+            <p>Thứ Tư, 25.11.2026<br />Trao bằng &amp; chụp hình</p>
+          </article>
+          <article class="detail-card featured reveal">
+            <span class="detail-number">02</span>
+            <svg class="detail-icon photo-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 16h8l3-5h12l3 5h8v23H7Z"/><circle cx="24" cy="27" r="8"/><path d="M37 21h.01"/></svg>
+            <p class="detail-label">Hẹn nhau trong khung hình</p>
+            <h3>Đến chụp cùng Minh nhé!</h3>
+            <p class="photo-invite-copy">Ngày vui sẽ trọn vẹn hơn khi có bạn ở đó. Sau lễ trao bằng, hãy ở lại cùng Minh lưu vài tấm ảnh và thật nhiều kỷ niệm thanh xuân.</p>
+            <div class="photo-window" aria-label="Thời gian chụp hình từ 9 giờ 30 đến 11 giờ 30">
+              <span>Photo time</span>
+              <strong>09:30 → 11:30</strong>
+              <small>Gặp nhau sau lễ trao bằng</small>
+            </div>
+          </article>
+        </div>
+
+        <div class="map-block reveal" id="ban-do">
+          <div class="map-copy">
+            <p class="eyebrow">Meet me here</p>
+            <h3>Trường Đại học<br />Công nghiệp TP.HCM</h3>
+            <p>12 Nguyễn Văn Bảo, phường Hạnh Thông,<br />Thành phố Hồ Chí Minh</p>
+            <a class="map-direction" href="https://www.google.com/maps/dir/?api=1&amp;destination=Trường+Đại+học+Công+nghiệp+TP.HCM,+12+Nguyễn+Văn+Bảo,+Phường+Hạnh+Thông,+TP.HCM" target="_blank" rel="noreferrer">
+              Mở Google Maps <span>↗</span>
+            </a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Bản đồ Trường Đại học Công nghiệp Thành phố Hồ Chí Minh"
+              src="https://www.google.com/maps?q=Trường+Đại+học+Công+nghiệp+TP.HCM,+12+Nguyễn+Văn+Bảo,+Phường+Hạnh+Thông,+TP.HCM&amp;output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule-section" id="lich-trinh" aria-labelledby="schedule-title">
+        <div class="schedule-heading reveal">
+          <p class="eyebrow light">A little plan</p>
+          <h2 id="schedule-title">Lịch trình<br /><em>của chúng mình</em></h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><time>07:00</time><span></span><div><strong>Lễ trao bằng</strong><p>Từ 07:00 đến 09:30 · Cùng chứng kiến khoảnh khắc trên sân khấu.</p></div></li>
+          <li class="reveal"><time>09:30</time><span></span><div><strong>Chụp hình</strong><p>Từ 09:30 đến 11:30 · Cùng lưu lại thật nhiều kỷ niệm đẹp.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="countdown-section" aria-labelledby="countdown-title">
+        <div class="countdown-ring" aria-hidden="true"></div>
+        <p class="eyebrow reveal">Counting every moment</p>
+        <h2 id="countdown-title" class="reveal">Đếm ngược tới ngày gặp nhau</h2>
+        <div class="countdown reveal" aria-live="polite">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+        <div class="cta-group reveal">
+          <button class="button primary" id="calendarButton" type="button">Lưu vào lịch <span>↗</span></button>
+          <button class="button secondary" id="shareButton" type="button">Chia sẻ thiệp</button>
+        </div>
+        <p class="toast" id="toast" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="contact-section" id="lien-he" aria-labelledby="contact-title">
+        <div class="contact-heading reveal">
+          <p class="eyebrow light">Keep in touch</p>
+          <h2 id="contact-title">Liên hệ với <em>mình.</em></h2>
+        </div>
+        <div class="contact-links">
+          <a class="contact-card reveal" href="mailto:minh02122004@gmail.com?subject=Chúc%20mừng%20lễ%20tốt%20nghiệp" aria-label="Gửi email tới Dũng Minh" title="Gmail">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="3.5" y="6.5" width="25" height="19" rx="3"/><path d="m5 9 11 8 11-8"/></svg>
+            </span>
+          </a>
+          <a class="contact-card reveal" href="https://zalo.me/0942415448" target="_blank" rel="noreferrer" aria-label="Mở Zalo của Dũng Minh" title="Zalo">
+            <span class="contact-icon zalo-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M6 5.5h20a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H15l-7 4v-4H6a3 3 0 0 1-3-3v-12a3 3 0 0 1 3-3Z"/><path d="m10 12 7 0-7 8h7M20 12v8M24 12v8"/></svg>
+            </span>
+          </a>
+          <a class="contact-card reveal" href="https://fb.com/minhphamvietdung" target="_blank" rel="noreferrer" aria-label="Mở Facebook của Dũng Minh" title="Facebook">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M19 28V17h4l1-5h-5V9.5c0-1.4.7-2.5 2.7-2.5H24V3.2c-.8-.1-2.2-.2-3.7-.2-3.8 0-6.3 2.3-6.3 6.5V12h-4v5h4v11"/></svg>
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="monogram footer-mark" href="#top">DM</a>
+      <p>Cảm ơn bạn đã là một phần<br />trong hành trình của mình.</p>
+      <div><span>Graduation · 2026</span><span>Made with love ♡</span></div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -63,11 +63,40 @@ document.getElementById("shareButton").addEventListener("click", async () => {
 document.querySelector(".sound-toggle").addEventListener("click", (event) => {
   const button = event.currentTarget;
   const paused = button.classList.toggle("paused");
+  document.body.classList.toggle("effects-paused", paused);
   button.setAttribute("aria-pressed", String(paused));
   button.setAttribute("aria-label", paused ? "Bật hiệu ứng" : "Tạm dừng hiệu ứng");
 });
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const particleLayer = document.getElementById("waterParticles");
+
+function createWaterParticles() {
+  const particleCount = window.innerWidth <= 600 ? 20 : 34;
+  const fragment = document.createDocumentFragment();
+
+  for (let index = 0; index < particleCount; index += 1) {
+    const particle = document.createElement("span");
+    const isSpark = index % 6 === 0;
+    const size = 3 + Math.random() * 7;
+
+    particle.className = `water-particle${isSpark ? " spark" : ""}`;
+    if (isSpark) particle.textContent = "✦";
+    particle.style.setProperty("--x", `${Math.random() * 100}%`);
+    particle.style.setProperty("--size", `${size}px`);
+    particle.style.setProperty("--spark-size", `${size + 5}px`);
+    particle.style.setProperty("--duration", `${11 + Math.random() * 13}s`);
+    particle.style.setProperty("--delay", `${-Math.random() * 22}s`);
+    particle.style.setProperty("--drift", `${-55 + Math.random() * 110}px`);
+    particle.style.setProperty("--particle-opacity", `${0.28 + Math.random() * 0.42}`);
+    fragment.appendChild(particle);
+  }
+
+  particleLayer.appendChild(fragment);
+}
+
+if (!reducedMotion) createWaterParticles();
+
 if (reducedMotion) {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
 } else {

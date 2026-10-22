@@ -325,13 +325,17 @@ footer > div { display: flex; justify-content: space-between; padding-top: 24px;
   .label-two { left: -14px; }
   .letter-heading h2 br, .details-intro h2 br { display: none; }
   .letter-section { min-height: auto; gap: 45px; }
-  .details-section { padding: 100px 6vw; }
+  .details-section { padding: 84px 6vw 100px; }
   .details-intro { display: block; }
-  .details-intro h2 { margin-top: 18px; align-items: flex-start; text-align: left; font-size: clamp(48px, 14vw, 72px); }
-  .date-display { padding: 46px 0 50px; }
-  .date-unit { min-height: 98px; padding: 17px 5px 14px; gap: 9px; }
-  .date-unit small { font-size: 8px; letter-spacing: .15em; }
-  .date-unit strong { font-size: clamp(29px, 7.5vw, 42px); }
+  .details-intro { padding-bottom: 28px; }
+  .details-intro h2 { margin-top: 16px; align-items: flex-start; text-align: left; font-size: clamp(44px, 12.5vw, 60px); line-height: 1.02; }
+  .date-display { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 38px 0 44px; }
+  .date-unit { min-height: 108px; padding: 18px 8px 15px; gap: 10px; }
+  .date-unit + .date-unit { border-left: 0; }
+  .date-unit:nth-child(even) { border-left: 1px solid var(--line); }
+  .date-unit:nth-child(n + 3) { border-top: 0; }
+  .date-unit small { font-size: 8px; letter-spacing: .18em; }
+  .date-unit strong { font-size: clamp(42px, 13vw, 56px); }
   .detail-card { min-height: 280px; }
   .map-copy { padding: 54px 32px; }
   .map-copy::after { right: 28px; top: 24px; }

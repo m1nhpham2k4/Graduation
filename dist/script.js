@@ -3,7 +3,7 @@ const EVENT = {
   start: new Date("2026-11-25T07:00:00+07:00"),
   end: new Date("2026-11-25T11:30:00+07:00"),
   location: "Trường Đại học Công nghiệp TP.HCM, 12 Nguyễn Văn Bảo, phường Hạnh Thông, TP.HCM",
-  description: "Lễ trao bằng từ 07:00–09:30, chụp hình từ 09:30–11:30. Cùng Dũng Minh lưu lại một dấu mốc thật đẹp trong ngày lễ tốt nghiệp."
+  description: "Lễ trao bằng từ 07:00–10:30, chụp hình từ 10:30–11:30. Cùng Dũng Minh lưu lại một dấu mốc thật đẹp trong ngày lễ tốt nghiệp."
 };
 
 const pad = (value) => String(Math.max(0, value)).padStart(2, "0");

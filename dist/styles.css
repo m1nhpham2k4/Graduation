@@ -169,7 +169,8 @@ h1 em { margin-top: .16em; color: var(--lime); font-weight: 500; }
 .letter-section::before { content: "“"; position: absolute; font-family: "Cormorant Garamond", serif; font-size: 42vw; color: rgba(255,255,255,.025); left: -3vw; top: -10vw; line-height: 1; }
 .letter-heading, .letter-body { position: relative; z-index: 1; }
 .letter-heading h2, .details-intro h2, .schedule-heading h2, .countdown-section h2 { margin: 0; font-weight: 500; letter-spacing: -.04em; line-height: .92; }
-.letter-heading h2 { font-size: clamp(48px, 6.5vw, 100px); }
+.letter-heading h2 { display: flex; flex-direction: column; gap: .08em; font-size: clamp(48px, 6.5vw, 100px); }
+.letter-title-line { display: block; }
 .letter-heading em { color: var(--lime); font-weight: 500; }
 .letter-body { font-size: 14px; line-height: 2; max-width: 500px; }
 .letter-body p { margin: 0 0 25px; }
@@ -317,7 +318,7 @@ footer > div { display: flex; justify-content: space-between; padding-top: 24px;
   .hero-note { margin-top: 32px; padding-left: 48px; font-size: 13px; }
   .hero-note::before { width: 38px; }
   .circle-link { display: flex; width: 84px; height: 84px; margin: 30px 8% 0 auto; font-size: 10px; }
-  .invitation-card-wrap { width: 100%; }
+  .invitation-card-wrap { width: 100%; scroll-margin-top: 18px; }
   .invitation-card { width: 100%; min-height: 0; padding: 18px; grid-template-columns: 1fr; }
   .invitation-card::after { inset: 10px; }
   .card-corner { width: 44px; height: 44px; }
@@ -339,8 +340,7 @@ footer > div { display: flex; justify-content: space-between; padding-top: 24px;
   .label-two { left: 2px; }
   .letter-section { min-height: auto; gap: 36px; padding: 84px 6vw; }
   .letter-heading .eyebrow { max-width: 290px; line-height: 1.7; }
-  .letter-heading h2 { font-size: clamp(42px, 12vw, 54px); line-height: 1; }
-  .letter-heading h2 br { display: block; }
+  .letter-heading h2 { gap: .14em; font-size: clamp(42px, 12vw, 54px); line-height: 1.02; }
   .letter-body { max-width: none; font-size: 13px; line-height: 1.85; }
   .letter-body p { margin-bottom: 20px; }
   .signature { margin-top: 28px; font-size: 34px; }

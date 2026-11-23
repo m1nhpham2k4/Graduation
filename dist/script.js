@@ -70,6 +70,18 @@ document.querySelector(".sound-toggle").addEventListener("click", (event) => {
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const particleLayer = document.getElementById("waterParticles");
+const openInvitationLink = document.querySelector(".circle-link");
+const portraitInvitation = document.getElementById("portrait-invitation");
+
+openInvitationLink.addEventListener("click", (event) => {
+  if (!window.matchMedia("(max-width: 600px)").matches) return;
+
+  event.preventDefault();
+  portraitInvitation.scrollIntoView({
+    behavior: reducedMotion ? "auto" : "smooth",
+    block: "start"
+  });
+});
 
 function createWaterParticles() {
   const particleCount = window.innerWidth <= 600 ? 20 : 34;
